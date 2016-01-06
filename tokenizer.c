@@ -12,10 +12,13 @@ void create_tokenizer();
 void delete_tokenizer();
 char* get_next_token();
 
-int main () {
-	int n;
-	scanf("%d",&n);
-	printf("N: %d",n);
+int main (char *arg0 , char **arg1) {
+	Tokenizer *tokenizer;
+	char *argMismatch = "Invalid arguments. \n";
+	char *generalError = "An error occured while processing your request. \nPlease try again later. \n";
+
+	printf(generalError);
+
 }
 
 
