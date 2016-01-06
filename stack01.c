@@ -3,7 +3,7 @@
 void function(int a, int b);
 
 
-main() {
+int main() {
 	function(1,2);
 	printf("This is where the return address points \n");
 }
