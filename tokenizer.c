@@ -48,17 +48,17 @@ Tokenizer* create_tokenizer(char *delim, char *string) {
 
 	int l;
 	for(l=0; l < delimLength; l++){
-		int k;
-		for(k = 0; k < stringLength; k++){
-			if(cp_string[k] = cp_delim[l]) {
-				if(l >= 1 && k > 0){
-					if(cp_string[k-1] == '\n') {cp_string[k] == cp_delim[l];} 
-					else {
-						int i;
-						for(i = 1; i <= l;i++) {cp_string [k-i] == cp_delim[l-i];}
-					}	
-				} else {cp_string[k] == '\n';}
-			}
+	}
+	int k;
+	for(k = 0; k < stringLength; k++){
+		if(cp_string[k] = cp_delim[0]) {
+			if(delimLength-1 > 1){
+				if(cp_string[k-1] == '\n') {cp_string[k] == cp_delim[l];} 
+				else {
+					int i;
+					for(i = 1; i <= l;i++) {cp_string [k-i] == cp_delim[l-i];}
+				}	
+			} else {cp_string[k] == '\n';}
 		}
 	}
 }
