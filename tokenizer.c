@@ -48,8 +48,8 @@ Tokenizer* create_tokenizer(char *delim, char *string) {
 	for(k = 0; k < stringLength; k++){
 		if(cp_string[k] = delim[0]) {
 			cp_string[k] = '\0';
-//handles if delim is longer than one i.e. "%d". If k < length of string - length of delim +1. Prevent array index out of bounds exception
-//(+1 compensates for lack of null character)
+			//handles if delim is longer than one i.e. "%d". If k < length of string - length of delim +1. Prevent array index out of bounds exception
+			//(+1 compensates for lack of null character)
 			if(delimLength > 1 && k < (stringLength - delimLength+1)){
 				int l;
 				//loops through and puts \0 where delim is found;
