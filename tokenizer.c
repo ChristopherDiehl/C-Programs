@@ -2,11 +2,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #define getLiteral(a) #a
+
 typedef struct _Tokenizer {
-	char delim [3];
+	char *delim;
 	char *st;
-	int streamP;
+	int tokens;
 } Tokenizer;
 
 Tokenizer* create_tokenizer();
@@ -31,9 +33,33 @@ int main (int argc , char **argv) {
 
 }
 
-Tokenizer* create_tokenizer(char *delim, char *string){
+Tokenizer* create_tokenizer(char *delim, char *string) {
 	size_t delimLength = strlen(delim) +1;
 	size_t stringLength = strlen(string) +1;
+	Tokenizer *tokenizer = (Tokenizer *)malloc(sizeof(Tokenizer));
+	tokenizer->delim =delim;
+	tokenizer->st = string;
+	tokenizer->tokens = 0;
 
+	char *cp_delim = malloc(sizeof(char)*delimLength);
+	char *cp_string = malloc(sizeof(char)*stringLength);
+	strcpy(cp_delim,delim);
+	strcpy(cp_string,string);
+
+	int l;
+	for(l=0; l < delimLength; l++){
+		int k;
+		for(k = 0; k < stringLength; k++){
+			if(cp_string[k] = cp_delim[l]) {
+				if(l >= 1 && k > 0){
+					if(cp_string[k-1] == '\n') {cp_string[k] == cp_delim[l];} 
+					else {
+						int i;
+						for(i = 1; i <= l;i++) {cp_string [k-i] == cp_delim[l-i];}
+					}	
+				} else {cp_string[k] == '\n';}
+			}
+		}
+	}
 }
 
