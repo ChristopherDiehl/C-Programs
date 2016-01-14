@@ -65,6 +65,7 @@ Tokenizer* create_tokenizer(char *delim, char *string) {
 						}
 						break;
 					}
+					tokens++;
 				}	
 			}
 		}
