@@ -34,31 +34,35 @@ int main (int argc , char **argv) {
 }
 
 Tokenizer* create_tokenizer(char *delim, char *string) {
-	size_t delimLength = strlen(delim) +1;
+	size_t delimLength = strlen(delim);
 	size_t stringLength = strlen(string) +1;
 	Tokenizer *tokenizer = (Tokenizer *)malloc(sizeof(Tokenizer));
 	tokenizer->delim =delim;
 	tokenizer->st = string;
 	tokenizer->tokens = 0;
 
-	char *cp_delim = malloc(sizeof(char)*delimLength);
 	char *cp_string = malloc(sizeof(char)*stringLength);
-	strcpy(cp_delim,delim);
 	strcpy(cp_string,string);
 
-	int l;
-	for(l=0; l < delimLength; l++){
-	}
 	int k;
 	for(k = 0; k < stringLength; k++){
 		if(cp_string[k] = cp_delim[0]) {
-			if(delimLength-1 > 1){
-				if(cp_string[k-1] == '\n') {cp_string[k] == cp_delim[l];} 
-				else {
-					int i;
-					for(i = 1; i <= l;i++) {cp_string [k-i] == cp_delim[l-i];}
+			cp_string[k]= "/n";
+			if(delimLength > 1 && k < (stringLength - delimLength+1)){
+				int l;
+				for(l=1; l < delimLength; l++){
+					if(cp_string[k+l] = delim[l]) 
+						cp_string[k+l]= '/n';
+					else {
+						cp_string[k]= delim[l];
+						while(l > 1){
+							cp_string[k+l]= delim[k+l];
+							l--;
+						}
+						break;
+					}
 				}	
-			} else {cp_string[k] == '\n';}
+			}
 		}
 	}
 }
