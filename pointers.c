@@ -21,7 +21,7 @@ int main(void) {
 	int a = *p;
 	printf("D: %d",d);
 	printf("a: %d",a);
-	printf("c: %d",c);
+	printf("c: %d",)c;
 
 
 

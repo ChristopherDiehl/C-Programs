@@ -1,0 +1,52 @@
+!SESSION 2016-01-11 20:46:40.114 -----------------------------------------------
+eclipse.buildId=4.6.0.I20151209-2300
+java.version=1.8.0_45-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -data /home/chris/Projects/git/C-Programs -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-01-11 20:46:40.850
+!MESSAGE [SCR] Component definition XMLs not found in bundle org.eclipse.cdt.ui. The component header value is OSGI-INF/consoleservice.xml
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-01-11 20:46:40.851
+!MESSAGE [SCR] Component definition XMLs not found in bundle org.eclipse.cdt.ui. The component header value is OSGI-INF/consoleservice.xml
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-01-11 20:46:46.488
+!MESSAGE [SCR] Component definition XMLs not found in bundle org.eclipse.cdt.ui. The component header value is OSGI-INF/consoleservice.xml
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-01-11 20:46:46.488
+!MESSAGE [SCR] Component definition XMLs not found in bundle org.eclipse.cdt.ui. The component header value is OSGI-INF/consoleservice.xml
+!SESSION 2016-01-11 20:47:04.522 -----------------------------------------------
+eclipse.buildId=4.6.0.I20151209-2300
+java.version=1.8.0_45-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-01-11 20:47:05.288
+!MESSAGE [SCR] Component definition XMLs not found in bundle org.eclipse.cdt.ui. The component header value is OSGI-INF/consoleservice.xml
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-01-11 20:47:05.289
+!MESSAGE [SCR] Component definition XMLs not found in bundle org.eclipse.cdt.ui. The component header value is OSGI-INF/consoleservice.xml
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-01-11 20:47:26.250
+!MESSAGE [SCR] Component definition XMLs not found in bundle org.eclipse.cdt.ui. The component header value is OSGI-INF/consoleservice.xml
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-01-11 20:47:26.250
+!MESSAGE [SCR] Component definition XMLs not found in bundle org.eclipse.cdt.ui. The component header value is OSGI-INF/consoleservice.xml
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-01-11 20:49:29.907
+!MESSAGE Indexed 'C-Projects' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.ui.ide 4 4 2016-01-11 20:50:52.465
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2016-01-11 20:50:52.504
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-01-11 20:50:52.504
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-01-11 20:50:52.810
+!MESSAGE The workspace will exit with unsaved changes in this session.
