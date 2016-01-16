@@ -18,15 +18,15 @@ char* get_next_token();
 /*
 //argc is number of arguments passed to main
 //argv is a pointer to the parameters passed into main
-//deliminator should be in argv[0]. 
-//string should be in argv[1].
+//deliminator should be in argv[1]. 
+//string should be in argv[2].
 */
 
 int main (int argc , char **argv) {
 	Tokenizer *tokenizer;
 	char *argMismatch = "Invalid arguments. \n";
 	char *generalError = "An error occured while processing your request. \nPlease try again later. \n";
-	if (argc != 2) {
+	if (argc != 3) {
 		printf("%s",getLiteral(argMismatch));
 		return -1;
 	}
