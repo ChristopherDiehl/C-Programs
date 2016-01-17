@@ -25,8 +25,8 @@ void permutate(char *string, int leftIndex, int rightIndex) {
 	}
 }
 
-int main() {
-	char str[] = "AB";
+int main(int argc , char **argv) {
+	char *str = argv[1];
 	int n = strlen(str);
 	permutate(str,0,n-1);
 }
